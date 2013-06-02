@@ -115,11 +115,11 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
+    # Uncomment the next line to enable the media:
+    'django.contrib.admin',
+    # Uncomment the next line to enable media documentation:
     # 'django.contrib.admindocs',
-    'admin',
+    'media',
 )
 
 # A sample logging configuration. The only tangible logging

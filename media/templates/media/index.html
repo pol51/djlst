@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media List</title>
+</head>
+<body>
+{% if album_list %}
+    {% regroup album_list|dictsort:'name'|dictsort:'artist.name' by artist.name as albums_by_artist %}
+    {% for albums in albums_by_artist %}
+        {% for album in albums.list %}
+            {{ album }}<br />
+        {% endfor %}
+    {% endfor %}
+{% else %}
+    <p>No content yet.</p>
+{% endif %}
+</body>
+</html>
